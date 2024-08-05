@@ -1,0 +1,58 @@
+## Overview
+This project is a Flask-based web application designed for video streaming and image processing. It features video capture from multiple sources, integrates with a MySQL database, and includes various functionalities such as plotting, image hashing, and more.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+Navigate to the project directory:
+
+
+cd your-repo
+Install the required packages:
+Create a requirements.txt file with the following content:
+
+
+Flask
+opencv-python
+matplotlib
+pandas
+numpy
+Pillow
+imagehash
+mysql-connector-python
+Then, install the packages:
+
+
+pip install -r requirements.txt
+Usage
+Start the Flask application:
+
+python app.py
+Open your browser and go to http://localhost:5000.
+
+Dependencies
+This project uses the following libraries:
+
+Flask: Web framework for Python.
+opencv-python (cv2): Computer vision library for video capture and processing.
+pandas: Data manipulation and analysis library.
+numpy: Numerical operations library.
+matplotlib: Plotting library for creating graphs.
+Pillow (PIL): Image processing library.
+imagehash: Image hashing for image comparison.
+mysql-connector-python: MySQL database connector.
+threading: For multi-threading support.
+shutil, os, webbrowser, urllib: Various utility libraries for file operations, system-level tasks, and networking.
+Code Explanation
+Flask Imports: Used to set up and manage the web server, handle HTTP requests, and render HTML templates.
+Camera Imports: Custom classes VideoCamera and VideoCamera2 handle video streaming and capture.
+Date and Time Imports: Manage and work with dates and times.
+Random Imports: Generate random numbers for various purposes.
+Math and Data Manipulation Imports: Perform numerical operations and handle data.
+Plotting and Imaging Imports: Create plots and process images.
+Networking and System Imports: Handle network requests, file operations, and system interactions.
+Database Imports: Connect to and interact with a MySQL database.
+Contributing
+If you would like to contribute to this project, please fork the repository and submit a pull request with your changes. Make sure to follow the coding standards and include relevant tests.
