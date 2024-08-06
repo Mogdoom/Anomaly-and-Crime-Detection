@@ -1,0 +1,177 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Smart surveillance</title>
+  <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../static/assets/images/fav.jpg">
+  <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/assets/css/all.min.css">
+  <link rel="stylesheet" href="../static/assets/css/animate.css">
+  <link rel="stylesheet" href="../static/assets/plugins/slider/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../static/assets/plugins/slider/css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/style.css" />
+
+</head>
+
+<body>
+  <header class="container-fluid">
+   <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 d-none d-sm-block contacthd">
+              <p><i class="fas fa-phone-alt"></i> +987 222 333</p>
+            </div>
+            <div class="col-sm-8">
+              
+              <ul class="social-login">
+                <li>
+                  <i class="fab fa-facebook-square"></i>
+                </li>
+                <li>
+                  <i class="fab fa-twitter-square"></i>
+                </li>
+                <li>
+                  <i class="fab fa-instagram"></i>
+                </li>
+                <li>
+                  <i class="fab fa-linkedin"></i>
+                </li>
+              </ul>
+              
+              <ul class="email">
+                <li><i class="fa fa-envelope"></i>smartcam@gamil.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+   </div>
+   <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="logo col-md-3">
+                        <img src="assets/images/logo.png" alt="">
+                        <a data-toggle="collapse" data-target="#menu" href="#menu"><i class="fas d-block d-md-none small-menu fa-bars"></i></a>
+                    </div>
+                    <div id="menu" class="navs d-none d-md-block col-md-9">
+                        <ul>
+                            <li><a href="/admin">Home</a></li>
+                            <li><a href="/add_contact">Police Station</a></li>
+							<li><a href="/view_location">Location</a></li>
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </header>
+
+
+
+    <!--  ************************* Page Title Starts Here ************************** -->
+        
+   <div class="page-nav no-margin row">
+        <div class="container">
+            <div class="row">
+                <h2>Location</h2>
+                <!--<ul>
+                    <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><i class="fas fa-angle-double-right"></i> Contact US</li>
+                </ul>-->
+            </div>
+        </div>
+    </div>
+
+    <div class="row contact-rooo no-margin">
+        <div class="container">
+            <div class="row">
+
+				
+                <div style="padding:20px" class="col-md-4">
+				
+				<form name="form1" method="post">
+                 					
+					</form>
+                </div>
+                <div class="col-md-8">
+						
+                    <div style="margin:50px" class="serv">
+
+
+					
+
+
+                        <h2 style="margin-top:10px;">Location Details</h2>
+						{% for rs in data %}
+						<h4></h4>
+						<div class="row">
+							<div class="col-md-12"><h5 style="color:#003399">{{rs[2]}}, {{rs[1]}}</h5></div>
+							
+						</div>
+						<div class="row">
+							<div class="col-md-4">Address</div>
+							<div class="col-md-6">: {{rs[3]}}</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">Geo Location</div>
+							<div class="col-md-6">: {{rs[4]}}</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4"></div>
+							<div class="col-md-6">
+							<a href="add_video?gid={{rs[0]}}">Add Video</a>
+							<a href="/view_location?act=del&did={{rs[0]}}">Delete</a></div>
+						</div>
+					
+					   <hr>
+                      {% endfor %}
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+              
+
+              
+<!--*************** Footer  Starts Here *************** -->                                  
+
+   <footer>
+   
+</footer>
+<div class="copy">
+            <div class="container">
+                <a href="https://www.smarteyeapps.com/">Smart surveillance</a>
+                
+                <span>
+                <a><i class="fab fa-github"></i></a>
+                <a><i class="fab fa-google-plus-g"></i></a>
+                <a><i class="fab fa-pinterest-p"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+        </span>
+            </div>
+
+        </div>
+
+
+</body>
+
+
+<script src="../static/assets/js/jquery-3.2.1.min.js"></script>
+<script src="../static/assets/js/popper.min.js"></script>
+<script src="../static/assets/js/bootstrap.min.js"></script>
+<script src="../static/assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="../static/assets/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="../static/assets/js/script.js"></script>
+
+</html>
+
+</html>

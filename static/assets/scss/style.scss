@@ -1,0 +1,568 @@
+/* =======================================================================
+Template Name: Youtubers
+Author:  SmartEye Technologies
+Author URI: www.smarteyeapps.com
+Version: 1.0
+coder name:Prabin Raja
+Description: This Template is created for Youtubers
+======================================================================= */
+
+/* ===================================== Import Variables ================================== */
+@import 'variable';
+/* ===================================== Basic CSS ==================================== */
+@import 'base/basic_setup';
+
+/* ===================================== Login Page Design CSS ==================================== */
+
+
+
+
+/* ===================================== Home Slider CSS ==================================== */
+header{
+    position: absolute;
+    background-color: #FFF;
+     &::after{
+        content: '';
+        position: absolute;
+        background: #1965fd;
+        height: 100%;
+        width: 1000px;
+        top: 0;
+        margin-right: -60px;
+        right: 0;
+        z-index: -1;
+         @media screen and (max-width: 1184px){
+             margin-right: -160px;
+         }
+         @media screen and (max-width: 1068px){
+             margin-right: -260px;
+         }
+         @media screen and (max-width: 974px){
+             margin-right: -360px;
+         }
+         @media screen and (max-width: 876px){
+              margin-right: -400px;
+         }
+         @media screen and (max-width: 824px){
+              margin-right: -480px;
+         }
+         @media screen and (max-width: 767px){
+             display: none;
+         }
+    }
+    z-index: 999;
+    .header-top{
+        padding: 16px;
+        background-color: #071c35;
+        .contacthd{
+           
+            p{
+                 color: #FFF;
+                 font-size: .95rem;
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .email{
+            float: right;
+            border-right:1px solid #CCC; 
+            li{
+                color: #FFF;
+                float: left;
+                padding: 0px 10px;
+                    font-size: .95rem;
+                i{
+                    margin-right: 10px;
+                }
+            }
+            @media screen and (max-width: 392px){
+                display: none;
+            }
+        }
+        .social-login{
+            float: right;
+            li{
+                color: #FFF;
+                float: left;
+                padding: 0px 10px;
+            }
+        }
+    }
+    .header-bottom{
+        
+        .logo{
+           padding-top: 11px;
+            img{
+                max-width: 210px;
+            }
+        }
+        .navs{
+            ul{
+                float: right;
+                li{
+                    float: left;
+                    padding: 21px 30px;
+                    font-weight: 600;
+                    font-size: .96rem;
+                    a{
+                        color: #fff;
+                    }
+                    @media screen and (max-width: 974px){
+                        padding: 20px 20px;
+                    }
+                    @media screen and (max-width: 824px){
+                         padding: 20px 13px;
+                    }
+                    @media screen and (max-width: 767px){
+                        float: none;
+                        color: #071c35;
+                        padding: 10px;
+                        font-weight: 600;
+                        a{
+                            color: #071c35;
+                        }
+                    }
+                }
+                @media screen and (max-width: 767px){
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+}
+.small-menu{
+    float: right;
+    color: #071c35;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 18px;
+    top: 18px;
+}
+.scroll-to-fixed-fixed{
+    background-color: #FFF;
+    @include shado-1();
+    .navs ul li a{
+       color: #071c35 !important; 
+    }
+                
+        
+    @media screen and (max-width: 767px){
+        padding-bottom: 10px;
+    }
+}
+
+
+
+/* ===================================== Slider CSS ==================================== */
+.slider-container{
+    padding-top: 20px;
+    padding-top: 120px;
+}
+.slider{
+    background-image: url(../images/slide-1.jpg);
+    height: 640px;
+    padding: 0px;
+   
+    .layye{
+        background-color: rgba(1, 29, 86, 0.63);
+        padding-top: 50px;
+        position: absolute;
+        width: 100%;
+        height: 640px;
+    }
+    
+    .detail{
+        padding-top: 70px;
+        padding-bottom: 90px;
+        color: #FFF;
+        h2{
+           margin-bottom: 30px;
+            font-size: 2.6rem;
+            color: #FFF;
+            font-weight: 600;
+        }
+        p{
+          margin-bottom: 40px;
+            max-width: 600px;
+        }
+        .btn{
+            box-shadow: none;
+            font-weight: 500;
+            border-radius: 50px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+    .image{
+        padding-top: 20px;
+        @media screen and (max-width: 767px){
+            padding-top: 0px;
+        }
+        
+    }
+}
+
+/* ===================================== Keyfeatures Style CSS ==================================== */
+
+.key-features{
+    .key-row{
+        margin-top: -120px;
+		@media screen and (max-width: 767px){
+		margin-top: -55px;
+		}
+        .sec-det{
+            padding: 50px 50px 30px;
+            box-shadow: 0 30px 60px #071c350d;
+            background-color: #FFF;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 30px;
+            i{
+                font-size: 26px;
+                width: 60px;
+                height: 60px;
+                background-color: $color-primary;
+                color: #FFF;
+                text-align: center;
+                border-radius: 5px;
+                padding-top: 15px;
+                margin-bottom: 30px;
+            }
+            h4{
+                font-weight: 600;
+                margin-bottom: 20px;
+                font-size: 1.2rem;
+            }
+            p{
+                font-size: .92rem;
+            }
+        }
+    }
+}
+
+/* ===================================== About US Style CSS ==================================== */
+.about-us{
+    @include big-padding();
+    margin-top: 30px;
+    .about-row{
+         box-shadow: 0 30px 60px #071c350d;
+        background-color: #FFF;
+        
+        border-radius: 10px;
+        .details{
+            padding: 30px;
+            margin: auto;
+            h2{
+                font-weight: 600;
+                margin-bottom: 50px;
+                border-bottom: 3px solid $color-primary;
+                width: auto;
+                padding-bottom: 15px;
+                width: 250px;
+            }
+            p{
+                margin-bottom: 70px;
+            }
+            a{
+                padding: 10px 20px;
+                background-color: $color-primary;
+                color: #FFF;
+                font-weight: 500;
+                border-radius: 50px;
+            }
+            ul{
+                li{
+                    padding: 4px;
+                    i{
+                        margin-right: 5px;
+                        color: $color-primary;
+                    }
+                }
+            }
+        }
+        .iamge{
+            padding: 0px;
+            img{
+                border-bottom-right-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            
+        }
+    }
+}
+
+
+/* ===================================== Our Services Style CSS ==================================== */
+
+.ourservices{
+    @incude big-padding();
+    .service-row{
+        margin-top: 20px;
+        .servicescol{
+            .ercider{
+                box-shadow: 0 30px 60px #071c350d;
+                padding: 50px 30px;
+                margin-bottom: 30px;
+                text-align: center;
+                i{
+                    font-size: 26px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: rgba(25,101,253,.1);
+                    color: $color-primary;
+                    text-align: center;
+                    border-radius: 5px;
+                    padding-top: 15px;
+                    margin-bottom: 30px;
+                }
+                h4{
+                    font-weight: 600;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+                p{
+                    
+                }
+                &:hover{
+                    background-color: #FFF;
+                    i{
+                        background-color: $color-primary;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ===================================== Professional Details Style CSS ==================================== */
+
+.professional-details{
+    background-image: url(../images/slide-1.jpg);
+    background-size: cover;
+    .layy{
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #FFF;
+        width: 100%;
+        height: 100%;
+        @include big-padding();
+        padding-bottom: 120px;
+        padding-top: 60px;
+        .succss-row{
+            .cuscol{
+                text-align: center;
+                margin-bottom: 30px;
+                i{
+                    color: $color-primary;
+                    background-color: #FFF;
+                    width: 80px;
+                    height: 80px;
+                    text-align: center;
+                    padding: 23px;
+                    font-size: 32px;
+                    border-radius: 50px;
+                    margin-bottom: 30px;
+                }
+                h1{
+                    font-weight: 700;
+                    color: #FFF;
+                    margin-bottom: 20px;
+                }
+                h6{
+                    font-weight: 600;
+                    color: #FFF;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        .session-title{
+            margin-bottom: 70px;
+            h2{
+                color: #FFF;
+            }
+        }
+    }
+}
+
+/* ===================================== Our Team Style CSS ==================================== */
+.out-team{
+    @include big-padding();
+    .team-row{
+        .team-col{
+            .teamdiv{
+                .image-part{
+                    text-align: center;
+                    img{
+                        width: 90px;
+                        border-radius: 50px;
+                        margin-bottom: -40px;
+                    }
+                }
+                .detail-part{
+                    background-color: #FFF;
+                    border-radius: 10px;
+                    padding: 20px;
+                    padding-top:60px;
+                    text-align: center;
+                    @include shado-4();
+                    h3{
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                        margin-bottom: 0px;
+                    }
+                    span{
+                        color: $color-primary;
+                        font-weight: 600;
+                    }
+                    p{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .social-links{
+                        a{
+                            i{
+                                width: 30px;
+                                text-align: center; 
+                                font-size: .9rem;
+                            }
+                           
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ===================================== Our Blog Style CSS ==================================== */
+
+.our-blog{
+    @include big-padding();
+    background-color: #cccccc0d;
+    .blog-row{
+        .blogcol{
+            margin-bottom: 30px;
+            .blogdiv{
+                background-color: #FFF;
+                box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0), 0 2px 3px 0 rgba(206, 206, 238, 0.12);
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                }
+                .blog-detail{
+                    padding: 30px;
+                    text-align: center;
+                    
+                    h4{
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        margin-bottom: 20px;
+                    }
+                    span{
+                        color: $color-primary;
+                    }
+                    p{
+                        margin-top: 20px;
+                    }
+                    ul{
+                        margin-top: 20px;
+                        li{
+                            float: left;
+                            width: 33.33%;
+                            text-align: center;
+                            font-size: .85rem;
+                            i{
+                                margin-right: 5px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+/* ===================================== Footer Cover Style  ================================== */
+.footer-ablove {
+  padding: 30px;
+  background-color: #5cb400;
+  color: #FFF;
+  font-size: 1.5rem; }
+  .footer-ablove .btn {
+    float: right;
+    background-color: #FFF;
+    font-family: "mouse-500", Arial, Helvetica, sans-serif; }
+
+footer {
+  padding: 80px 50px;
+  background-color: #071c35eb;
+  color: #FFF; }
+  @media screen and (max-width: 940px) {
+    footer {
+      padding: 50px 10px; } }
+  footer h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+      font-weight: 600;
+}
+  footer .about p {
+    font-size: .9em;
+    margin-bottom: 20px; }
+  footer .about .foot-address {
+    display: flex; }
+    footer .about .foot-address .icon {
+      padding: 20px 10px; }
+    footer .about .foot-address .addet {
+      font-size: .9rem;
+      margin: auto 0px; }
+  footer .fotblog .blohjb {
+    margin-bottom: 10px; }
+    footer .fotblog .blohjb p {
+      font-size: .9rem; }
+    footer .fotblog .blohjb span {
+      font-size: .9rem; }
+  footer .glink ul li {
+    padding: 10px; }
+    footer .glink ul li i {
+      margin-right: 10px; }
+    footer .glink ul li a {
+      color: #FFF; }
+  footer .tags ul li {
+    float: left;
+    padding: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #CCC; }
+
+.copy {
+  padding: 20px;
+  background-color: #071c35;
+  color: #FFF; }
+  .copy a {
+    color: #FFF;
+      font-size: .85rem;
+}
+  .copy span {
+    float: right; }
+    .copy span i {
+      margin-right: 20px; }
+
+      .cop-ck{
+        padding: 20px;
+        background-color: #ffffffbd;
+        h2{
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+      }
+
+
+
+/* ===================================== Responsive Style CSS ==================================== */
+
+@import 'response/responsive';

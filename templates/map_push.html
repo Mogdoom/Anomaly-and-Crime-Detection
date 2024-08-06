@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <title>Marker Labels</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+ <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVktjjBzkWVn7sAO55StbkXS3L1cx-vjI&callback=initMap&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+	/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  height: 600px;
+  width:100%;
+}
+
+/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+html,
+body {
+  
+  margin: 0;
+  padding: 0;
+}
+
+	</style>
+
+<script language="javascript">
+
+// In the following example, markers appear when the user clicks on the map.
+// Each marker is labeled with a single alphabetical character.
+//const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//let labelIndex = 0;
+
+function initMap() {
+  const bangalore = { lat: 10.81076008, lng: 78.6944584 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 12,
+    center: bangalore,
+	
+  });
+//Add listener
+
+  // This event listener calls addMarker() when the map is clicked.
+  google.maps.event.addListener(map, "click", (event) => {
+    addMarker(event.latLng, map);
+	
+	
+	document.form1.t1.value=event.latLng+",";
+	//document.form1.t2.value=results[1].formatted_address;
+	//document.form1.t2.value=event.position;
+  });
+  
+ 
+  // Add a marker at the center of the map.
+  addMarker(bangalore, map);
+}
+
+
+// Adds a marker to the map.
+function addMarker(location, map) {
+  // Add the marker at the clicked location, and add the next-available label
+  // from the array of alphabetical characters.
+  new google.maps.Marker({
+    position: location,
+    //label: labels[labelIndex++ % labels.length],
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+</script>
+  </head>
+  <body>
+    
+<div id="map"></div>
+
+
+<form name="form1" method="post">
+<p>Enter the Address</p>
+<table border="0">
+<tr>
+<td valign="top">
+
+	<table border="0">
+	
+	{% for ss in sdata %}
+	<tr>
+	<td>{{loop.index}}</td>
+	<td><input type="text" name="address[]" class="form-control"></td>
+	</tr>
+	{% endfor %}
+	
+	</table>
+
+</td>
+<td valign="top">
+<textarea name="t1" rows="10" cols="50" required></textarea>
+</td>
+
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" name="btn" value="Submit"></td>
+</tr>
+</table>
+
+{% if msg=="ok" %}
+<span style="color:#000099">Added Success..</span>
+
+{% endif %}
+</form>
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises.
+      See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+      for more information.
+      -->
+   
+  </body>
+</html>

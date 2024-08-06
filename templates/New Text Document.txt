@@ -1,0 +1,3 @@
+<iframe src="http://iotcloud.co.in/testsms/sms.php?sms=msg&name={{name}}&mess={{message}}&mobile={{mobile}}" width="10" height="10" ></iframe>					
+					
+<iframe src="http://iotcloud.co.in/testsms/sms.php?sms=msg&name=Dept&mess={{message2}}&mobile={{mobile2}}" width="10" height="10"></iframe>	

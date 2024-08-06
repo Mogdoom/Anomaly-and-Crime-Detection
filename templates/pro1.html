@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Training</title>
+ <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../static/assets/css/all.min.css">
+  <link rel="stylesheet" href="../static/assets/css/animate.css">
+  <link rel="stylesheet" href="../static/assets/plugins/slider/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../static/assets/plugins/slider/css/owl.theme.default.css">
+  <link rel="stylesheet" type="text/css" href="../static/assets/css/style.css" />
+	
+</head>
+
+<body>
+
+<h3 align="center">Resizing & Loading Data </h3>
+                    
+						<div class="row">
+                     {% for img in dimg%}
+					 
+					 	<div class="col-md-2">
+						<img src="../static/dataset/{{img}}" width="90" height="90">
+						</div>
+					
+					 {% endfor %}
+					 </div>
+ <script>
+//Using setTimeout to execute a function after 5 seconds.
+setTimeout(function () {
+   //Redirect with JavaScript
+  window.location.href="/pro11";
+}, 5000);
+</script>  
+
+ <script src="../static/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/js/owl-carousel.js"></script>
+  <script src="../static/assets/js/animation.js"></script>
+  <script src="../static/assets/js/imagesloaded.js"></script>
+  <script src="../static/assets/js/custom.js"></script>
+
+</body>
+</html>
